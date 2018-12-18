@@ -7,9 +7,9 @@ import arrow
 
 
 @click.command()
-@click.argument('year')
+@click.argument('year', metavar='year')
 def main(year):
-    """Console script for days_til_xmas."""
+    """An example command to show how many days until Xmas during a specific year"""
     if not year.isnumeric():
         click.echo('This command expects a numeric argument')
     else:
